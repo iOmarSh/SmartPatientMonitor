@@ -134,4 +134,6 @@
  C:/Users/omarg/.platformio/packages/framework-arduinoespressif32/cores/esp32/io_pin_remap.h \
  C:/Users/omarg/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
  include/tasks/task_sensor.h include/tasks/task_processing.h \
- include/tasks/task_output.h
+ include/tasks/task_output.h include/sensors/ldr_sensor.h \
+ include/sensors/ds18b20_sensor.h include/sensors/mpu6050_sensor.h \
+ include/sensors/button_input.h

@@ -1,4 +1,6 @@
 #include <Arduino.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 #include "tasks/task_processing.h"
 
 void TaskProcessing(void *pvParameters)
