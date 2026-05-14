@@ -5,9 +5,12 @@
 #include "tasks/task_output.h"
 
 #include "sensors/ldr_sensor.h"
-#include "sensors/ds18b20_sensor.h"
-#include "sensors/mpu6050_sensor.h"
+#include "sensors/lm35_sensor.h"
+#include "sensors/hcsr04_sensor.h"
 #include "sensors/button_input.h"
+
+#include "outputs/indicators.h"
+#include "outputs/lcd_display.h"
 
 void setup()
 {
@@ -15,9 +18,14 @@ void setup()
     
     // Initialize sensors / inputs
     initLDR();
-    initTemperatureSensor();
-    initMPU6050();
+    initLM35();
+    initHCSR04();
     initEmergencyButton();
+
+    // Initialize outputs
+    initIndicators();
+    initLCD();
+
     xTaskCreate(
         TaskSensor,
         "Sensor Task",  

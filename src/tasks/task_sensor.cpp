@@ -3,8 +3,8 @@
 #include "freertos/task.h"
 #include "tasks/task_sensor.h"
 #include "sensors/ldr_sensor.h"
-#include "sensors/ds18b20_sensor.h"
-#include "sensors/mpu6050_sensor.h"
+#include "sensors/lm35_sensor.h"
+#include "sensors/hcsr04_sensor.h"
 #include "sensors/button_input.h"
 
 void TaskSensor(void *pvParameters)
@@ -12,32 +12,23 @@ void TaskSensor(void *pvParameters)
     while (1)
     {
         int ldrValue = readLDR();
-        float temperatureC = readTemperature();
-        float accelerationMagnitude = readAccelerationMagnitude();
+        float tempC = readLM35Temperature();
+        float distCm = readHCSR04Distance();
         bool buttonPressed = isEmergencyPressed();
 
         Serial.print("[Sensors] LDR=");
         Serial.print(ldrValue);
-        Serial.print(" | DS18B20=");
-        if (isnan(temperatureC))
-        {
-            Serial.print("N/A");
-        }
-        else
-        {
-            Serial.print(temperatureC, 2);
-            Serial.print(" C");
-        }
+        
+        Serial.print(" | LM35=");
+        Serial.print(tempC, 1);
+        Serial.print(" C");
 
-        Serial.print(" | MPU6050 |acc|=");
-        if (isnan(accelerationMagnitude))
-        {
-            Serial.print("N/A");
-        }
-        else
-        {
-            Serial.print(accelerationMagnitude, 2);
-            Serial.print(" m/s^2");
+        Serial.print(" | HCSR04=");
+        if (distCm < 0) {
+            Serial.print("Err");
+        } else {
+            Serial.print(distCm, 1);
+            Serial.print(" cm");
         }
 
         Serial.print(" | Button=");
