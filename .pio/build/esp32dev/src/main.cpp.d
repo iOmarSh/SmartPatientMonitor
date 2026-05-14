@@ -137,4 +137,5 @@
  include/tasks/task_output.h include/sensors/ldr_sensor.h \
  include/sensors/lm35_sensor.h include/sensors/hcsr04_sensor.h \
  include/sensors/button_input.h include/outputs/indicators.h \
- include/outputs/lcd_display.h
+ include/outputs/lcd_display.h include/sync/rtos_sync.h \
+ include/system_types.h

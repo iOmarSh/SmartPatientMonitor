@@ -1,18 +1,19 @@
 #pragma once
 
-typedef struct {
+typedef struct
+{
     float temperature;
     int lightLevel;
-    float accelMagnitude;
+    float distance;
     bool emergencyPressed;
-    unsigned long timestamp;
 } SensorData;
 
-enum SystemState {
+enum SystemState
+{
     STATE_NORMAL,
-    STATE_FEVER,
-    STATE_FALL,
-    STATE_INACTIVITY,
-    STATE_EMERGENCY,
-    STATE_SENSOR_FAILURE
+    STATE_WARNING,
+    STATE_DANGER,
+    STATE_EMERGENCY
 };
+
+extern const char *SystemStateToString(SystemState state);

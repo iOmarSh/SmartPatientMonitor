@@ -136,4 +136,5 @@
  C:/Users/omarg/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
  include/tasks/task_sensor.h include/sensors/ldr_sensor.h \
  include/sensors/lm35_sensor.h include/sensors/hcsr04_sensor.h \
- include/sensors/button_input.h
+ include/sensors/button_input.h include/sync/rtos_sync.h \
+ include/system_types.h
