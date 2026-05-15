@@ -1,0 +1,35 @@
+name: Formatting
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: format-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  clang-format:
+    name: Verify clang-format
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install clang-format
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang-format
+
+      - name: Check formatting
+        run: |
+          set -euo pipefail
+          mapfile -t files < <(
+            printf '%s\n' main.cpp
+            find src include test -type f \( -name '*.cpp' -o -name '*.h' \) | sort
+          )
+          clang-format --dry-run --Werror "${files[@]}"

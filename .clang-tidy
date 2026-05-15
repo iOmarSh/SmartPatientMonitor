@@ -1,0 +1,15 @@
+Checks: >
+  -*,
+  clang-analyzer-*,
+  bugprone-*,
+  performance-*,
+  portability-*,
+  readability-misleading-indentation,
+  misc-unused-parameters
+WarningsAsErrors: >
+  clang-analyzer-*,
+  bugprone-*,
+  readability-misleading-indentation
+HeaderFilterRegex: '^(include|src|test|main\.cpp)'
+AnalyzeTemporaryDtors: true
+FormatStyle: file

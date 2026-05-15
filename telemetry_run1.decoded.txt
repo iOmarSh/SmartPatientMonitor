@@ -1,0 +1,1456 @@
+--- Terminal on COM5 | 115200 8-N-1
+--- Available filters and text transformations: debug, default, direct, esp32_exception_decoder, hexlify, log2file, nocontrol, printable, send_on_enter, time
+--- More details at https://bit.ly/pio-monitor-filters
+--- Quit: Ctrl+C | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+[LCD] I2C device found at 0x27
+[1172] [StateQueue] SEND OK | NORMAL
+[1173] [SensorQueue] SEND OK | T=26.5 C | LDR=324 | DIST=57.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[1470] [StateQueue] SEND OK | NORMAL
+[1470] [SensorQueue] SEND OK | T=27.7 C | LDR=351 | DIST=57.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[1571] [StateQueue] SEND OK | NORMAL
+[1571] [SensorQueue] SEND OK | T=27.7 C | LDR=337 | DIST=57.1 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[1770] [StateQueue] SEND OK | NORMAL
+[1770] [SensorQueue] SEND OK | T=27.5 C | LDR=315 | DIST=52.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[1970] [StateQueue] SEND OK | NORMAL
+[1970] [SensorQueue] SEND OK | T=27.5 C | LDR=294 | DIST=51.9 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[2270] [StateQueue] SEND OK | NORMAL
+[2270] [SensorQueue] SEND OK | T=27.6 C | LDR=272 | DIST=51.9 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[2470] [StateQueue] SEND OK | NORMAL
+[2470] [SensorQueue] SEND OK | T=27.6 C | LDR=275 | DIST=51.9 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[2570] [StateQueue] SEND OK | NORMAL
+[2570] [SensorQueue] SEND OK | T=27.6 C | LDR=286 | DIST=52.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[2771] [StateQueue] SEND OK | NORMAL
+[2771] [SensorQueue] SEND OK | T=27.6 C | LDR=299 | DIST=54.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[2970] [StateQueue] SEND OK | NORMAL
+[2970] [SensorQueue] SEND OK | T=27.7 C | LDR=315 | DIST=51.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[3170] [StateQueue] SEND OK | NORMAL
+[3170] [SensorQueue] SEND OK | T=27.7 C | LDR=340 | DIST=51.9 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[3370] [StateQueue] SEND OK | NORMAL
+[3370] [SensorQueue] SEND OK | T=27.7 C | LDR=357 | DIST=52.9 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[3571] [StateQueue] SEND OK | NORMAL
+[3571] [SensorQueue] SEND OK | T=27.8 C | LDR=368 | DIST=57.1 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[3771] [StateQueue] SEND OK | NORMAL
+[3771] [SensorQueue] SEND OK | T=27.7 C | LDR=375 | DIST=57.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[3971] [StateQueue] SEND OK | NORMAL
+[3971] [SensorQueue] SEND OK | T=27.8 C | LDR=378 | DIST=56.9 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[4170] [StateQueue] SEND OK | NORMAL
+[4170] [SensorQueue] SEND OK | T=27.8 C | LDR=373 | DIST=53.1 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[4370] [StateQueue] SEND OK | NORMAL
+[4370] [SensorQueue] SEND OK | T=27.7 C | LDR=357 | DIST=50.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[4570] [StateQueue] SEND OK | NORMAL
+[4570] [SensorQueue] SEND OK | T=27.6 C | LDR=329 | DIST=50.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[4770] [StateQueue] SEND OK | NORMAL
+[4770] [SensorQueue] SEND OK | T=27.6 C | LDR=308 | DIST=50.5 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[4970] [StateQueue] SEND OK | NORMAL
+[4970] [SensorQueue] SEND OK | T=27.6 C | LDR=299 | DIST=50.5 cm | BTN=RELEASED
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5000 ms
+System CPU Utilization: 47.69% of 2 cores
+Heap Free: 263104 bytes | Used: 45968 bytes | Window Min/Max: 263104/263104 bytes
+Heap Graph: | |
+Stack HWM [Sensor]: 1180 words
+Stack HWM [Process]: 1340 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1516 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   8.36% | Window:   835931 us | Avg:  41796.6 us | WCET: 126431 us | Cycles:   20 | Period: 199-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   1.91% | Window:   191400 us | Avg:   9114.3 us | WCET:  10127 us | Cycles:   21 | Period: 18-300 ms | Deadline: N/A
+Output   | CPU:  38.93% | Window:  3892570 us | Avg: 114487.4 us | WCET: 165974 us | Cycles:   34 | Period: 65-166 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=835931 Process=191400 Output=3892570
+========================
+
+[5170] [StateQueue] SEND OK | NORMAL
+[5170] [SensorQueue] SEND OK | T=27.6 C | LDR=281 | DIST=50.5 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[5370] [StateQueue] SEND OK | NORMAL
+[5370] [SensorQueue] SEND OK | T=27.7 C | LDR=276 | DIST=50.5 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[5570] [StateQueue] SEND OK | NORMAL
+[5570] [SensorQueue] SEND OK | T=27.9 C | LDR=289 | DIST=50.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[5870] [StateQueue] SEND OK | NORMAL
+[5870] [SensorQueue] SEND OK | T=28.1 C | LDR=319 | DIST=50.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[6070] [StateQueue] SEND OK | NORMAL
+[6070] [SensorQueue] SEND OK | T=28.1 C | LDR=327 | DIST=50.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[6270] [StateQueue] SEND OK | NORMAL
+[6270] [SensorQueue] SEND OK | T=28.1 C | LDR=336 | DIST=50.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[6368] [Processing] State transition: NORMAL -> WARNING
+[6368] [StateQueue] SEND OK | WARNING
+[6368] [SensorQueue] SEND OK | T=28.3 C | LDR=357 | DIST=7.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] State received: WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[6568] [StateQueue] SEND OK | WARNING
+[6568] [SensorQueue] SEND OK | T=28.4 C | LDR=377 | DIST=5.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[6767] [StateQueue] SEND OK | WARNING
+[6767] [SensorQueue] SEND OK | T=28.4 C | LDR=388 | DIST=3.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[6968] [StateQueue] SEND OK | WARNING
+[6968] [SensorQueue] SEND OK | T=28.3 C | LDR=379 | DIST=3.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[7168] [StateQueue] SEND OK | WARNING
+[7168] [SensorQueue] SEND OK | T=28.1 C | LDR=368 | DIST=4.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[7368] [StateQueue] SEND OK | WARNING
+[7368] [SensorQueue] SEND OK | T=28.1 C | LDR=355 | DIST=4.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[7568] [StateQueue] SEND OK | WARNING
+[7568] [SensorQueue] SEND OK | T=28.1 C | LDR=346 | DIST=11.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[7870] [StateQueue] SEND OK | WARNING
+[7870] [SensorQueue] SEND OK | T=28.2 C | LDR=331 | DIST=11.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[8070] [StateQueue] SEND OK | WARNING
+[8070] [SensorQueue] SEND OK | T=27.9 C | LDR=296 | DIST=11.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[8170] [Processing] State transition: WARNING -> NORMAL
+[8170] [StateQueue] SEND OK | NORMAL
+[Output] State received: NORMAL
+[8170] [SensorQueue] SEND OK | T=27.9 C | LDR=272 | DIST=51.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[8470] [StateQueue] SEND OK | NORMAL
+[8470] [SensorQueue] SEND OK | T=27.8 C | LDR=286 | DIST=51.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[8670] [StateQueue] SEND OK | NORMAL
+[8670] [SensorQueue] SEND OK | T=27.9 C | LDR=299 | DIST=51.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[8770] [StateQueue] SEND OK | NORMAL
+[8770] [SensorQueue] SEND OK | T=28.1 C | LDR=304 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[8971] [StateQueue] SEND OK | NORMAL
+[8971] [SensorQueue] SEND OK | T=28.1 C | LDR=327 | DIST=57.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[9170] [StateQueue] SEND OK | NORMAL
+[9170] [SensorQueue] SEND OK | T=28.3 C | LDR=350 | DIST=44.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[9370] [StateQueue] SEND OK | NORMAL
+[9370] [SensorQueue] SEND OK | T=28.6 C | LDR=365 | DIST=46.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[9570] [StateQueue] SEND OK | NORMAL
+[9570] [SensorQueue] SEND OK | T=27.8 C | LDR=381 | DIST=45.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[9770] [StateQueue] SEND OK | NORMAL
+[9770] [SensorQueue] SEND OK | T=28.6 C | LDR=390 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[9970] [StateQueue] SEND OK | NORMAL
+[9970] [SensorQueue] SEND OK | T=28.6 C | LDR=382 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5068 ms
+System CPU Utilization: 65.06% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@ |
+Stack HWM [Sensor]: 1180 words
+Stack HWM [Process]: 1340 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1516 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:  13.49% | Window:  1366760 us | Avg:  54670.4 us | WCET: 126431 us | Cycles:   25 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.38% | Window:   241596 us | Avg:   9663.8 us | WCET:  10127 us | Cycles:   25 | Period: 98-302 ms | Deadline: N/A
+Output   | CPU:  49.19% | Window:  4985835 us | Avg: 118710.4 us | WCET: 165975 us | Cycles:   42 | Period: 65-166 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=2202691 Process=432996 Output=8878405
+========================
+
+[10170] [StateQueue] SEND OK | NORMAL
+[10170] [SensorQueue] SEND OK | T=28.5 C | LDR=385 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[10370] [StateQueue] SEND OK | NORMAL
+[10370] [SensorQueue] SEND OK | T=28.7 C | LDR=368 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[10570] [StateQueue] SEND OK | NORMAL
+[10570] [SensorQueue] SEND OK | T=28.5 C | LDR=346 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[10770] [StateQueue] SEND OK | NORMAL
+[10770] [SensorQueue] SEND OK | T=28.0 C | LDR=204 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[10970] [StateQueue] SEND OK | NORMAL
+[10970] [SensorQueue] SEND OK | T=27.8 C | LDR=155 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[11170] [StateQueue] SEND OK | NORMAL
+[11170] [SensorQueue] SEND OK | T=29.7 C | LDR=204 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[11370] [StateQueue] SEND OK | NORMAL
+[11370] [SensorQueue] SEND OK | T=27.7 C | LDR=116 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[11570] [StateQueue] SEND OK | NORMAL
+[11570] [SensorQueue] SEND OK | T=29.2 C | LDR=143 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[11770] [StateQueue] SEND OK | NORMAL
+[11770] [SensorQueue] SEND OK | T=29.2 C | LDR=131 | DIST=46.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[11970] [StateQueue] SEND OK | NORMAL
+[11970] [SensorQueue] SEND OK | T=28.9 C | LDR=138 | DIST=46.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] State received: EMERGENCY
+[12170] [Processing] State transition: NORMAL -> EMERGENCY
+[12170] [StateQueue] SEND OK | EMERGENCY
+[12170] [SensorQueue] SEND OK | T=29.5 C | LDR=145 | DIST=46.6 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[12370] [StateQueue] SEND OK | EMERGENCY
+[12370] [SensorQueue] SEND OK | T=29.7 C | LDR=149 | DIST=46.6 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[12570] [Processing] State transition: EMERGENCY -> NORMAL
+[12570] [StateQueue] SEND OK | NORMAL
+[12570] [SensorQueue] SEND OK | T=27.3 C | LDR=138 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] State received: NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[12770] [StateQueue] SEND OK | NORMAL
+[12770] [SensorQueue] SEND OK | T=30.7 C | LDR=187 | DIST=46.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[12970] [StateQueue] SEND OK | NORMAL
+[12970] [SensorQueue] SEND OK | T=31.1 C | LDR=180 | DIST=46.6 cm | BTN=RELEASED
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[13170] [Processing] State transition: NORMAL -> EMERGENCY
+[13170] [StateQueue] SEND OK | EMERGENCY
+[13170] [SensorQueue] SEND OK | T=30.1 C | LDR=170 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[13370] [Processing] State transition: EMERGENCY -> NORMAL
+[13370] [StateQueue] SEND OK | NORMAL
+[13370] [SensorQueue] SEND OK | T=28.0 C | LDR=133 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] State received: NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[13570] [StateQueue] SEND OK | NORMAL
+[13570] [SensorQueue] SEND OK | T=28.3 C | LDR=139 | DIST=45.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[13770] [StateQueue] SEND OK | NORMAL
+[13770] [SensorQueue] SEND OK | T=28.2 C | LDR=129 | DIST=45.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[13970] [StateQueue] SEND OK | NORMAL
+[13970] [SensorQueue] SEND OK | T=28.1 C | LDR=123 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[14170] [Processing] State transition: NORMAL -> EMERGENCY
+[14170] [StateQueue] SEND OK | EMERGENCY
+[14170] [SensorQueue] SEND OK | T=28.9 C | LDR=133 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[14370] [StateQueue] SEND OK | EMERGENCY
+[14370] [SensorQueue] SEND OK | T=27.4 C | LDR=97 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[14570] [StateQueue] SEND OK | EMERGENCY
+[14570] [SensorQueue] SEND OK | T=27.6 C | LDR=91 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[14770] [StateQueue] SEND OK | EMERGENCY
+[14770] [SensorQueue] SEND OK | T=29.0 C | LDR=117 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[14970] [StateQueue] SEND OK | EMERGENCY
+[14970] [SensorQueue] SEND OK | T=27.4 C | LDR=112 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5068 ms
+System CPU Utilization: 59.03% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@  |
+Stack HWM [Sensor]: 1084 words
+Stack HWM [Process]: 1340 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1228 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   7.01% | Window:   710758 us | Avg:  27336.8 us | WCET: 126431 us | Cycles:   26 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.39% | Window:   242260 us | Avg:   9690.4 us | WCET:  10127 us | Cycles:   25 | Period: 200-200 ms | Deadline: N/A
+Output   | CPU:  49.62% | Window:  5029806 us | Avg: 116972.2 us | WCET: 165975 us | Cycles:   43 | Period: 65-166 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=2948880 Process=694378 Output=13908211
+========================
+
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[15370] [StateQueue] SEND OK | EMERGENCY
+[15370] [SensorQueue] SEND OK | T=29.1 C | LDR=144 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[15570] [StateQueue] SEND OK | EMERGENCY
+[15570] [SensorQueue] SEND OK | T=27.4 C | LDR=119 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[15770] [StateQueue] SEND OK | EMERGENCY
+[15770] [SensorQueue] SEND OK | T=27.4 C | LDR=125 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[15970] [Processing] State transition: EMERGENCY -> NORMAL
+[15970] [StateQueue] SEND OK | NORMAL
+[Output] State received: NORMAL
+[15970] [SensorQueue] SEND OK | T=28.7 C | LDR=156 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[16170] [Processing] State transition: NORMAL -> EMERGENCY
+[16170] [StateQueue] SEND OK | EMERGENCY
+[16170] [SensorQueue] SEND OK | T=28.4 C | LDR=141 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[16370] [Processing] State transition: EMERGENCY -> NORMAL
+[16370] [StateQueue] SEND OK | NORMAL
+[16370] [SensorQueue] SEND OK | T=28.6 C | LDR=148 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] State received: NORMAL
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[16570] [Processing] State transition: NORMAL -> EMERGENCY
+[16570] [StateQueue] SEND OK | EMERGENCY
+[16570] [SensorQueue] SEND OK | T=28.8 C | LDR=145 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[16770] [Processing] State transition: EMERGENCY -> NORMAL
+[16770] [StateQueue] SEND OK | NORMAL
+[16770] [SensorQueue] SEND OK | T=28.3 C | LDR=137 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] State received: NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[16970] [StateQueue] SEND OK | NORMAL
+[16970] [SensorQueue] SEND OK | T=27.8 C | LDR=117 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[17170] [StateQueue] SEND OK | NORMAL
+[Output] State received: NORMAL
+[17170] [SensorQueue] SEND OK | T=28.5 C | LDR=112 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[17370] [Processing] State transition: NORMAL -> EMERGENCY
+[17370] [StateQueue] SEND OK | EMERGENCY
+[17370] [SensorQueue] SEND OK | T=28.1 C | LDR=99 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[17570] [Processing] State transition: EMERGENCY -> NORMAL
+[17570] [StateQueue] SEND OK | NORMAL
+[17570] [SensorQueue] SEND OK | T=28.6 C | LDR=108 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] State received: NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[17770] [StateQueue] SEND OK | NORMAL
+[17770] [SensorQueue] SEND OK | T=27.8 C | LDR=86 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[17970] [StateQueue] SEND OK | NORMAL
+[17970] [SensorQueue] SEND OK | T=27.7 C | LDR=86 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[18170] [Processing] State transition: NORMAL -> EMERGENCY
+[18170] [StateQueue] SEND OK | EMERGENCY
+[18170] [SensorQueue] SEND OK | T=28.5 C | LDR=108 | DIST=45.4 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[18370] [StateQueue] SEND OK | EMERGENCY
+[18370] [SensorQueue] SEND OK | T=27.0 C | LDR=98 | DIST=45.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[18570] [Processing] State transition: EMERGENCY -> NORMAL
+[18570] [StateQueue] SEND OK | NORMAL
+[18570] [SensorQueue] SEND OK | T=27.1 C | LDR=180 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] State received: NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[18768] [Processing] State transition: NORMAL -> WARNING
+[18768] [StateQueue] SEND OK | WARNING
+[Output] State received: WARNING
+[18768] [SensorQueue] SEND OK | T=28.3 C | LDR=283 | DIST=16.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[18968] [StateQueue] SEND OK | WARNING
+[18968] [SensorQueue] SEND OK | T=28.1 C | LDR=128 | DIST=14.9 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[19168] [StateQueue] SEND OK | WARNING
+[19168] [SensorQueue] SEND OK | T=27.9 C | LDR=0 | DIST=10.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[19368] [StateQueue] SEND OK | WARNING
+[19368] [SensorQueue] SEND OK | T=27.7 C | LDR=0 | DIST=9.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[19568] [StateQueue] SEND OK | WARNING
+[19568] [SensorQueue] SEND OK | T=27.6 C | LDR=0 | DIST=14.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[19768] [StateQueue] SEND OK | WARNING
+[19768] [SensorQueue] SEND OK | T=27.5 C | LDR=0 | DIST=16.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[19968] [StateQueue] SEND OK | WARNING
+[19968] [SensorQueue] SEND OK | T=27.7 C | LDR=0 | DIST=11.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[20168] [StateQueue] SEND OK | WARNING
+[20168] [SensorQueue] SEND OK | T=27.8 C | LDR=0 | DIST=9.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5070 ms
+System CPU Utilization: 60.44% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@   |
+Stack HWM [Sensor]: 1084 words
+Stack HWM [Process]: 1340 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1228 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   7.44% | Window:   754756 us | Avg:  30190.2 us | WCET: 126431 us | Cycles:   25 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.39% | Window:   242642 us | Avg:   9705.7 us | WCET:  19122 us | Cycles:   25 | Period: 191-200 ms | Deadline: N/A
+Output   | CPU:  50.61% | Window:  5131738 us | Avg: 114038.6 us | WCET: 167971 us | Cycles:   45 | Period: 65-168 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=3703636 Process=937020 Output=19039949
+========================
+
+[20368] [StateQueue] SEND OK | WARNING
+[20368] [SensorQueue] SEND OK | T=27.9 C | LDR=0 | DIST=8.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[20568] [StateQueue] SEND OK | WARNING
+[20568] [SensorQueue] SEND OK | T=27.9 C | LDR=0 | DIST=7.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[20768] [StateQueue] SEND OK | WARNING
+[20768] [SensorQueue] SEND OK | T=27.5 C | LDR=0 | DIST=8.9 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[20968] [StateQueue] SEND OK | WARNING
+[20968] [SensorQueue] SEND OK | T=27.5 C | LDR=0 | DIST=9.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[21168] [StateQueue] SEND OK | WARNING
+[21168] [SensorQueue] SEND OK | T=27.5 C | LDR=0 | DIST=9.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[21368] [StateQueue] SEND OK | WARNING
+[21368] [SensorQueue] SEND OK | T=27.8 C | LDR=0 | DIST=7.9 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[21568] [StateQueue] SEND OK | WARNING
+[21568] [SensorQueue] SEND OK | T=27.9 C | LDR=26 | DIST=9.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[21768] [StateQueue] SEND OK | WARNING
+[21768] [SensorQueue] SEND OK | T=28.5 C | LDR=241 | DIST=9.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[21968] [StateQueue] SEND OK | WARNING
+[21968] [SensorQueue] SEND OK | T=28.3 C | LDR=384 | DIST=9.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[22270] [StateQueue] SEND OK | WARNING
+[22270] [SensorQueue] SEND OK | T=28.3 C | LDR=395 | DIST=9.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[22368] [StateQueue] SEND OK | WARNING
+[22368] [SensorQueue] SEND OK | T=28.2 C | LDR=386 | DIST=7.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[22568] [StateQueue] SEND OK | WARNING
+[22568] [SensorQueue] SEND OK | T=28.4 C | LDR=378 | DIST=8.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[22768] [StateQueue] SEND OK | WARNING
+[22768] [SensorQueue] SEND OK | T=28.3 C | LDR=368 | DIST=11.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[22970] [Processing] State transition: WARNING -> NORMAL
+[22970] [StateQueue] SEND OK | NORMAL
+[Output] State received: NORMAL
+[22970] [SensorQueue] SEND OK | T=28.3 C | LDR=351 | DIST=45.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[23170] [StateQueue] SEND OK | NORMAL
+[23170] [SensorQueue] SEND OK | T=27.9 C | LDR=324 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[23370] [StateQueue] SEND OK | NORMAL
+[23370] [SensorQueue] SEND OK | T=27.8 C | LDR=302 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[23570] [StateQueue] SEND OK | NORMAL
+[23570] [SensorQueue] SEND OK | T=27.9 C | LDR=284 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[23770] [StateQueue] SEND OK | NORMAL
+[23770] [SensorQueue] SEND OK | T=27.8 C | LDR=282 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[23970] [StateQueue] SEND OK | NORMAL
+[23970] [SensorQueue] SEND OK | T=27.9 C | LDR=288 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[24170] [StateQueue] SEND OK | NORMAL
+[24170] [SensorQueue] SEND OK | T=28.0 C | LDR=294 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[24370] [StateQueue] SEND OK | NORMAL
+[24370] [SensorQueue] SEND OK | T=28.0 C | LDR=310 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[24570] [StateQueue] SEND OK | NORMAL
+[24570] [SensorQueue] SEND OK | T=28.1 C | LDR=336 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[24770] [StateQueue] SEND OK | NORMAL
+[24770] [SensorQueue] SEND OK | T=28.1 C | LDR=347 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[24970] [StateQueue] SEND OK | NORMAL
+[24970] [SensorQueue] SEND OK | T=28.3 C | LDR=357 | DIST=45.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[25170] [StateQueue] SEND OK | NORMAL
+[25170] [SensorQueue] SEND OK | T=28.3 C | LDR=363 | DIST=45.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5069 ms
+System CPU Utilization: 59.40% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@    |
+Stack HWM [Sensor]: 1084 words
+Stack HWM [Process]: 1340 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1228 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   7.37% | Window:   746753 us | Avg:  29870.1 us | WCET: 126431 us | Cycles:   25 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.40% | Window:   243571 us | Avg:   9742.8 us | WCET:  19122 us | Cycles:   25 | Period: 98-302 ms | Deadline: N/A
+Output   | CPU:  50.38% | Window:  5107819 us | Avg: 118786.5 us | WCET: 167971 us | Cycles:   43 | Period: 65-166 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=4450389 Process=1180591 Output=24147768
+========================
+
+[25370] [StateQueue] SEND OK | NORMAL
+[25370] [SensorQueue] SEND OK | T=28.4 C | LDR=355 | DIST=48.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[25570] [StateQueue] SEND OK | NORMAL
+[25570] [SensorQueue] SEND OK | T=28.4 C | LDR=341 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[25770] [StateQueue] SEND OK | NORMAL
+[25770] [SensorQueue] SEND OK | T=28.4 C | LDR=334 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[25970] [StateQueue] SEND OK | NORMAL
+[25970] [SensorQueue] SEND OK | T=28.5 C | LDR=321 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[26170] [StateQueue] SEND OK | NORMAL
+[26170] [SensorQueue] SEND OK | T=28.5 C | LDR=295 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[26370] [StateQueue] SEND OK | NORMAL
+[26370] [SensorQueue] SEND OK | T=28.6 C | LDR=274 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[26570] [StateQueue] SEND OK | NORMAL
+[26570] [SensorQueue] SEND OK | T=28.7 C | LDR=263 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[26770] [StateQueue] SEND OK | NORMAL
+[26770] [SensorQueue] SEND OK | T=28.7 C | LDR=240 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[26970] [StateQueue] SEND OK | NORMAL
+[26970] [SensorQueue] SEND OK | T=28.7 C | LDR=247 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[27170] [StateQueue] SEND OK | NORMAL
+[27170] [SensorQueue] SEND OK | T=28.9 C | LDR=250 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[27370] [StateQueue] SEND OK | NORMAL
+[27370] [SensorQueue] SEND OK | T=28.8 C | LDR=258 | DIST=46.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[27570] [StateQueue] SEND OK | NORMAL
+[27570] [SensorQueue] SEND OK | T=29.0 C | LDR=272 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[27770] [StateQueue] SEND OK | NORMAL
+[27770] [SensorQueue] SEND OK | T=29.0 C | LDR=295 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[27970] [StateQueue] SEND OK | NORMAL
+[27970] [SensorQueue] SEND OK | T=28.9 C | LDR=307 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[28170] [StateQueue] SEND OK | NORMAL
+[28170] [SensorQueue] SEND OK | T=29.1 C | LDR=310 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[28370] [StateQueue] SEND OK | NORMAL
+[28370] [SensorQueue] SEND OK | T=29.2 C | LDR=287 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[28570] [StateQueue] SEND OK | NORMAL
+[28570] [SensorQueue] SEND OK | T=29.0 C | LDR=159 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[28768] [Processing] State transition: NORMAL -> WARNING
+[28768] [StateQueue] SEND OK | WARNING
+[28768] [SensorQueue] SEND OK | T=29.1 C | LDR=157 | DIST=4.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] State received: WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[28967] [StateQueue] SEND OK | WARNING
+[28967] [SensorQueue] SEND OK | T=29.4 C | LDR=173 | DIST=3.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[29168] [StateQueue] SEND OK | WARNING
+[29168] [SensorQueue] SEND OK | T=29.3 C | LDR=167 | DIST=3.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[29470] [StateQueue] SEND OK | WARNING
+[29470] [SensorQueue] SEND OK | T=29.5 C | LDR=148 | DIST=3.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[29567] [StateQueue] SEND OK | WARNING
+[29567] [SensorQueue] SEND OK | T=29.2 C | LDR=144 | DIST=3.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[29768] [StateQueue] SEND OK | WARNING
+[29768] [SensorQueue] SEND OK | T=29.2 C | LDR=131 | DIST=3.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[29968] [StateQueue] SEND OK | WARNING
+[29968] [SensorQueue] SEND OK | T=29.2 C | LDR=118 | DIST=4.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[30167] [StateQueue] SEND OK | WARNING
+[30167] [SensorQueue] SEND OK | T=29.3 C | LDR=110 | DIST=3.1 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5073 ms
+System CPU Utilization: 58.32% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@     |
+Stack HWM [Sensor]: 1084 words
+Stack HWM [Process]: 1340 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1228 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   7.43% | Window:   753764 us | Avg:  28990.9 us | WCET: 126431 us | Cycles:   26 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.56% | Window:   259488 us | Avg:   9980.3 us | WCET:  19122 us | Cycles:   26 | Period: 97-302 ms | Deadline: N/A
+Output   | CPU:  48.52% | Window:  4922859 us | Avg: 120069.7 us | WCET: 167971 us | Cycles:   41 | Period: 65-166 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=5236584 Process=1440079 Output=29249609
+========================
+
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[30568] [StateQueue] SEND OK | WARNING
+[30568] [SensorQueue] SEND OK | T=29.6 C | LDR=190 | DIST=5.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[30870] [StateQueue] SEND OK | WARNING
+[30870] [SensorQueue] SEND OK | T=29.5 C | LDR=174 | DIST=5.0 cm | BTN=RELEASED
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] State received: EMERGENCY
+[30967] [Processing] State transition: WARNING -> EMERGENCY
+[30967] [StateQueue] SEND OK | EMERGENCY
+[30967] [SensorQueue] SEND OK | T=30.2 C | LDR=190 | DIST=2.7 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[31168] [StateQueue] SEND OK | EMERGENCY
+[31168] [SensorQueue] SEND OK | T=29.8 C | LDR=176 | DIST=4.0 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[31367] [StateQueue] SEND OK | EMERGENCY
+[31367] [SensorQueue] SEND OK | T=28.4 C | LDR=164 | DIST=2.7 cm | BTN=PRESSED
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[31567] [Processing] State transition: EMERGENCY -> WARNING
+[31567] [StateQueue] SEND OK | WARNING
+[Output] State received: WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[31767] [StateQueue] SEND OK | WARNING
+[31767] [SensorQueue] SEND OK | T=29.7 C | LDR=222 | DIST=3.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[31968] [Processing] State transition: WARNING -> EMERGENCY
+[31968] [StateQueue] SEND OK | EMERGENCY
+[31968] [SensorQueue] SEND OK | T=30.0 C | LDR=210 | DIST=4.0 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[32270] [StateQueue] SEND OK | EMERGENCY
+[32270] [SensorQueue] SEND OK | T=28.3 C | LDR=182 | DIST=4.0 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[32470] [Processing] State transition: EMERGENCY -> WARNING
+[32470] [StateQueue] SEND OK | WARNING
+[Output] State received: WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[32567] [StateQueue] SEND OK | WARNING
+[32567] [SensorQueue] SEND OK | T=29.7 C | LDR=219 | DIST=2.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[32768] [StateQueue] SEND OK | WARNING
+[32768] [SensorQueue] SEND OK | T=29.6 C | LDR=170 | DIST=5.3 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[32970] [Processing] State transition: WARNING -> NORMAL
+[32970] [StateQueue] SEND OK | NORMAL
+[32970] [SensorQueue] SEND OK | T=29.7 C | LDR=169 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] State received: NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[33170] [StateQueue] SEND OK | NORMAL
+[33170] [SensorQueue] SEND OK | T=29.6 C | LDR=173 | DIST=47.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[33370] [StateQueue] SEND OK | NORMAL
+[33370] [SensorQueue] SEND OK | T=29.6 C | LDR=182 | DIST=47.5 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[33570] [StateQueue] SEND OK | NORMAL
+[33570] [SensorQueue] SEND OK | T=29.6 C | LDR=229 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[33770] [StateQueue] SEND OK | NORMAL
+[33770] [SensorQueue] SEND OK | T=29.7 C | LDR=251 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[33970] [StateQueue] SEND OK | NORMAL
+[33970] [SensorQueue] SEND OK | T=29.7 C | LDR=267 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[34170] [StateQueue] SEND OK | NORMAL
+[34170] [SensorQueue] SEND OK | T=29.7 C | LDR=281 | DIST=47.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[34370] [StateQueue] SEND OK | NORMAL
+[34370] [SensorQueue] SEND OK | T=29.7 C | LDR=266 | DIST=47.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[34570] [StateQueue] SEND OK | NORMAL
+[34570] [SensorQueue] SEND OK | T=29.5 C | LDR=48 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[34770] [StateQueue] SEND OK | NORMAL
+[34770] [SensorQueue] SEND OK | T=29.5 C | LDR=13 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[34970] [StateQueue] SEND OK | NORMAL
+[34970] [SensorQueue] SEND OK | T=29.6 C | LDR=75 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[35170] [StateQueue] SEND OK | NORMAL
+[35170] [SensorQueue] SEND OK | T=29.5 C | LDR=47 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[35370] [StateQueue] SEND OK | NORMAL
+[35370] [SensorQueue] SEND OK | T=29.6 C | LDR=0 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5076 ms
+System CPU Utilization: 59.89% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@      |
+Stack HWM [Sensor]: 1084 words
+Stack HWM [Process]: 1340 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1228 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   9.71% | Window:   985770 us | Avg:  39430.8 us | WCET: 135431 us | Cycles:   25 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.37% | Window:   240129 us | Avg:   9605.2 us | WCET:  19122 us | Cycles:   25 | Period: 97-302 ms | Deadline: N/A
+Output   | CPU:  49.45% | Window:  5019804 us | Avg: 116739.6 us | WCET: 178982 us | Cycles:   43 | Period: 65-166 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=6222354 Process=1680208 Output=34269413
+========================
+
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[35670] [StateQueue] SEND OK | NORMAL
+[35670] [SensorQueue] SEND OK | T=29.6 C | LDR=0 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[35770] [StateQueue] SEND OK | NORMAL
+[35770] [SensorQueue] SEND OK | T=29.5 C | LDR=0 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[35970] [StateQueue] SEND OK | NORMAL
+[35970] [SensorQueue] SEND OK | T=32.4 C | LDR=147 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[36170] [StateQueue] SEND OK | NORMAL
+[36170] [SensorQueue] SEND OK | T=34.7 C | LDR=208 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[36370] [StateQueue] SEND OK | NORMAL
+[36370] [SensorQueue] SEND OK | T=29.8 C | LDR=85 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[36570] [StateQueue] SEND OK | NORMAL
+[36570] [SensorQueue] SEND OK | T=29.5 C | LDR=35 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[36770] [StateQueue] SEND OK | NORMAL
+[36770] [SensorQueue] SEND OK | T=29.6 C | LDR=47 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] State received: EMERGENCY
+[36970] [Processing] State transition: NORMAL -> EMERGENCY
+[36970] [StateQueue] SEND OK | EMERGENCY
+[36970] [SensorQueue] SEND OK | T=29.6 C | LDR=48 | DIST=47.4 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[37170] [StateQueue] SEND OK | EMERGENCY
+[37170] [SensorQueue] SEND OK | T=30.2 C | LDR=65 | DIST=47.0 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[37370] [Processing] State transition: EMERGENCY -> NORMAL
+[37370] [StateQueue] SEND OK | NORMAL
+[37370] [SensorQueue] SEND OK | T=28.6 C | LDR=50 | DIST=47.4 cm | BTN=RELEASED
+[Output] State received: NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[37570] [StateQueue] SEND OK | NORMAL
+[37570] [SensorQueue] SEND OK | T=29.8 C | LDR=80 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[37770] [StateQueue] SEND OK | NORMAL
+[37770] [SensorQueue] SEND OK | T=29.8 C | LDR=323 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[37970] [StateQueue] SEND OK | NORMAL
+[37970] [SensorQueue] SEND OK | T=29.9 C | LDR=349 | DIST=47.5 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[38170] [StateQueue] SEND OK | NORMAL
+[38170] [SensorQueue] SEND OK | T=29.9 C | LDR=353 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[38370] [StateQueue] SEND OK | NORMAL
+[38370] [SensorQueue] SEND OK | T=29.9 C | LDR=336 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[38570] [StateQueue] SEND OK | NORMAL
+[38570] [SensorQueue] SEND OK | T=30.0 C | LDR=315 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[38770] [StateQueue] SEND OK | NORMAL
+[38770] [SensorQueue] SEND OK | T=29.9 C | LDR=285 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[38970] [StateQueue] SEND OK | NORMAL
+[38970] [SensorQueue] SEND OK | T=29.8 C | LDR=201 | DIST=46.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[39170] [StateQueue] SEND OK | NORMAL
+[39170] [SensorQueue] SEND OK | T=29.7 C | LDR=148 | DIST=47.5 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[39370] [StateQueue] SEND OK | NORMAL
+[39370] [SensorQueue] SEND OK | T=29.6 C | LDR=65 | DIST=46.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[39570] [StateQueue] SEND OK | NORMAL
+[39570] [SensorQueue] SEND OK | T=29.6 C | LDR=17 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[39768] [Processing] State transition: NORMAL -> WARNING
+[39768] [StateQueue] SEND OK | WARNING
+[39768] [SensorQueue] SEND OK | T=29.4 C | LDR=7 | DIST=11.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] State received: WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] State received: EMERGENCY
+[39968] [Processing] State transition: WARNING -> EMERGENCY
+[39968] [StateQueue] SEND OK | EMERGENCY
+[39968] [SensorQueue] SEND OK | T=30.0 C | LDR=9 | DIST=11.0 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[40168] [StateQueue] SEND OK | EMERGENCY
+[40168] [SensorQueue] SEND OK | T=30.0 C | LDR=25 | DIST=10.7 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[40368] [StateQueue] SEND OK | EMERGENCY
+[40368] [SensorQueue] SEND OK | T=28.5 C | LDR=0 | DIST=13.2 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5075 ms
+System CPU Utilization: 59.54% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@       |
+Stack HWM [Sensor]: 1084 words
+Stack HWM [Process]: 1340 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1228 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   7.91% | Window:   802762 us | Avg:  32110.5 us | WCET: 136431 us | Cycles:   25 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.37% | Window:   240702 us | Avg:   9628.1 us | WCET:  19122 us | Cycles:   25 | Period: 100-300 ms | Deadline: N/A
+Output   | CPU:  49.26% | Window:  4999794 us | Avg: 116274.3 us | WCET: 178982 us | Cycles:   43 | Period: 65-166 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=7025116 Process=1920910 Output=39269207
+========================
+
+[40568] [StateQueue] SEND OK | EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[40768] [Processing] State transition: EMERGENCY -> WARNING
+[40768] [StateQueue] SEND OK | WARNING
+[40768] [SensorQueue] SEND OK | T=29.9 C | LDR=45 | DIST=19.8 cm | BTN=RELEASED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] State received: WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[40969] [StateQueue] SEND OK | WARNING
+[40969] [SensorQueue] SEND OK | T=29.6 C | LDR=78 | DIST=23.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[41169] [Processing] State transition: WARNING -> EMERGENCY
+[41169] [StateQueue] SEND OK | EMERGENCY
+[41169] [SensorQueue] SEND OK | T=29.9 C | LDR=133 | DIST=21.7 cm | BTN=PRESSED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[41369] [StateQueue] SEND OK | EMERGENCY
+[41369] [SensorQueue] SEND OK | T=30.1 C | LDR=151 | DIST=22.1 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[41568] [Processing] State transition: EMERGENCY -> WARNING
+[41568] [StateQueue] SEND OK | WARNING
+[Output] State received: WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[41870] [StateQueue] SEND OK | WARNING
+[41870] [SensorQueue] SEND OK | T=29.7 C | LDR=149 | DIST=16.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[41968] [Processing] State transition: WARNING -> EMERGENCY
+[41968] [StateQueue] SEND OK | EMERGENCY
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[42168] [Processing] State transition: EMERGENCY -> WARNING
+[42168] [StateQueue] SEND OK | WARNING
+[42168] [SensorQueue] SEND OK | T=30.1 C | LDR=130 | DIST=12.5 cm | BTN=RELEASED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] State received: WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[Output] State received: EMERGENCY
+[42368] [Processing] State transition: WARNING -> EMERGENCY
+[42368] [StateQueue] SEND OK | EMERGENCY
+[42368] [SensorQueue] SEND OK | T=29.7 C | LDR=94 | DIST=14.6 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[42568] [StateQueue] SEND OK | EMERGENCY
+[42568] [SensorQueue] SEND OK | T=29.8 C | LDR=99 | DIST=11.7 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[42768] [StateQueue] SEND OK | EMERGENCY
+[42768] [SensorQueue] SEND OK | T=28.1 C | LDR=85 | DIST=11.7 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[42968] [Processing] State transition: EMERGENCY -> WARNING
+[42968] [StateQueue] SEND OK | WARNING
+[42968] [SensorQueue] SEND OK | T=29.4 C | LDR=108 | DIST=11.7 cm | BTN=RELEASED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] State received: WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[43168] [StateQueue] SEND OK | WARNING
+[43168] [SensorQueue] SEND OK | T=29.4 C | LDR=110 | DIST=13.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[43368] [StateQueue] SEND OK | WARNING
+[43368] [SensorQueue] SEND OK | T=29.4 C | LDR=114 | DIST=10.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Emergency ISR] Semaphore triggered
+[Emergency Task] Forced state = EMERGENCY
+[43568] [Processing] State transition: WARNING -> EMERGENCY
+[43568] [StateQueue] SEND OK | EMERGENCY
+[43568] [SensorQueue] SEND OK | T=29.4 C | LDR=102 | DIST=15.2 cm | BTN=PRESSED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[43770] [StateQueue] SEND OK | EMERGENCY
+[43770] [SensorQueue] SEND OK | T=29.6 C | LDR=78 | DIST=46.0 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[43970] [StateQueue] SEND OK | EMERGENCY
+[43970] [SensorQueue] SEND OK | T=29.5 C | LDR=70 | DIST=47.2 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[44170] [Processing] State transition: EMERGENCY -> NORMAL
+[44170] [StateQueue] SEND OK | NORMAL
+[44170] [SensorQueue] SEND OK | T=27.8 C | LDR=48 | DIST=45.2 cm | BTN=RELEASED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] State received: NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[44370] [StateQueue] SEND OK | NORMAL
+[44370] [SensorQueue] SEND OK | T=29.0 C | LDR=49 | DIST=45.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[44570] [StateQueue] SEND OK | NORMAL
+[44570] [SensorQueue] SEND OK | T=29.0 C | LDR=64 | DIST=45.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[44770] [StateQueue] SEND OK | NORMAL
+[44770] [SensorQueue] SEND OK | T=29.0 C | LDR=105 | DIST=46.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[44970] [Processing] State transition: NORMAL -> EMERGENCY
+[44970] [StateQueue] SEND OK | EMERGENCY
+[44970] [SensorQueue] SEND OK | T=29.0 C | LDR=85 | DIST=46.0 cm | BTN=PRESSED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] State received: EMERGENCY
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[45170] [StateQueue] SEND OK | EMERGENCY
+[45170] [SensorQueue] SEND OK | T=29.6 C | LDR=113 | DIST=45.6 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=ON | Buzzer=ON | LCD=EMERGENCY
+[45370] [StateQueue] SEND OK | EMERGENCY
+[45370] [SensorQueue] SEND OK | T=27.9 C | LDR=112 | DIST=46.8 cm | BTN=PRESSED
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[Output] LEDs G=OFF R=OFF | Buzzer=ON | LCD=EMERGENCY
+[45570] [Processing] State transition: EMERGENCY -> NORMAL
+[45570] [StateQueue] SEND OK | NORMAL
+[45570] [SensorQueue] SEND OK | T=27.9 C | LDR=105 | DIST=46.4 cm | BTN=RELEASED
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5076 ms
+System CPU Utilization: 60.43% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@        |
+Stack HWM [Sensor]: 1084 words
+Stack HWM [Process]: 1244 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1228 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   8.64% | Window:   877187 us | Avg:  35087.5 us | WCET: 136431 us | Cycles:   25 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.59% | Window:   262608 us | Avg:  10100.3 us | WCET:  19638 us | Cycles:   26 | Period: 98-302 ms | Deadline: N/A
+Output   | CPU:  49.56% | Window:  5031819 us | Avg: 119805.2 us | WCET: 178982 us | Cycles:   42 | Period: 65-168 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=7902303 Process=2183518 Output=44479009
+========================
+
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[45770] [StateQueue] SEND OK | NORMAL
+[45770] [SensorQueue] SEND OK | T=28.9 C | LDR=69 | DIST=46.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[45970] [StateQueue] SEND OK | NORMAL
+[45970] [SensorQueue] SEND OK | T=28.8 C | LDR=112 | DIST=46.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[46170] [StateQueue] SEND OK | NORMAL
+[46170] [SensorQueue] SEND OK | T=28.9 C | LDR=202 | DIST=46.8 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[46368] [Processing] State transition: NORMAL -> WARNING
+[46368] [StateQueue] SEND OK | WARNING
+[Output] State received: WARNING
+[46368] [SensorQueue] SEND OK | T=29.0 C | LDR=205 | DIST=5.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[46568] [StateQueue] SEND OK | WARNING
+[46568] [SensorQueue] SEND OK | T=29.2 C | LDR=213 | DIST=3.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[46767] [StateQueue] SEND OK | WARNING
+[46767] [SensorQueue] SEND OK | T=29.3 C | LDR=241 | DIST=3.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[Output] LEDs G=ON R=ON | Buzzer=OFF | LCD=WARNING
+[46968] [StateQueue] SEND OK | WARNING
+[46968] [SensorQueue] SEND OK | T=29.2 C | LDR=183 | DIST=4.7 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[47170] [Processing] State transition: WARNING -> NORMAL
+[47170] [StateQueue] SEND OK | NORMAL
+[47170] [SensorQueue] SEND OK | T=28.7 C | LDR=134 | DIST=45.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=WARNING
+[Output] State received: NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[47370] [StateQueue] SEND OK | NORMAL
+[47370] [SensorQueue] SEND OK | T=28.8 C | LDR=156 | DIST=47.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[47570] [StateQueue] SEND OK | NORMAL
+[47570] [SensorQueue] SEND OK | T=28.9 C | LDR=257 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[47770] [StateQueue] SEND OK | NORMAL
+[47770] [SensorQueue] SEND OK | T=28.7 C | LDR=139 | DIST=46.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[47970] [StateQueue] SEND OK | NORMAL
+[47970] [SensorQueue] SEND OK | T=28.8 C | LDR=144 | DIST=47.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[48170] [StateQueue] SEND OK | NORMAL
+[48170] [SensorQueue] SEND OK | T=28.7 C | LDR=271 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[48370] [StateQueue] SEND OK | NORMAL
+[48370] [SensorQueue] SEND OK | T=28.7 C | LDR=253 | DIST=49.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[48570] [StateQueue] SEND OK | NORMAL
+[48570] [SensorQueue] SEND OK | T=28.7 C | LDR=220 | DIST=50.5 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[48770] [StateQueue] SEND OK | NORMAL
+[48770] [SensorQueue] SEND OK | T=28.6 C | LDR=215 | DIST=50.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[48970] [StateQueue] SEND OK | NORMAL
+[48970] [SensorQueue] SEND OK | T=28.6 C | LDR=237 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[49170] [StateQueue] SEND OK | NORMAL
+[49170] [SensorQueue] SEND OK | T=28.6 C | LDR=277 | DIST=46.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[49370] [StateQueue] SEND OK | NORMAL
+[49370] [SensorQueue] SEND OK | T=28.7 C | LDR=293 | DIST=48.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[49570] [StateQueue] SEND OK | NORMAL
+[49570] [SensorQueue] SEND OK | T=28.7 C | LDR=307 | DIST=46.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[49770] [StateQueue] SEND OK | NORMAL
+[49770] [SensorQueue] SEND OK | T=28.7 C | LDR=329 | DIST=46.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[49970] [StateQueue] SEND OK | NORMAL
+[49970] [SensorQueue] SEND OK | T=28.7 C | LDR=350 | DIST=46.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[50170] [StateQueue] SEND OK | NORMAL
+[50170] [SensorQueue] SEND OK | T=28.7 C | LDR=361 | DIST=46.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[50370] [StateQueue] SEND OK | NORMAL
+[50370] [SensorQueue] SEND OK | T=28.7 C | LDR=359 | DIST=48.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[50570] [StateQueue] SEND OK | NORMAL
+[50570] [SensorQueue] SEND OK | T=28.7 C | LDR=367 | DIST=48.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5083 ms
+System CPU Utilization: 58.07% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@         |
+Stack HWM [Sensor]: 1084 words
+Stack HWM [Process]: 1244 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1228 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   6.61% | Window:   671762 us | Avg:  26870.5 us | WCET: 136431 us | Cycles:   25 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.37% | Window:   240989 us | Avg:   9639.6 us | WCET:  19638 us | Cycles:   25 | Period: 198-202 ms | Deadline: N/A
+Output   | CPU:  49.09% | Window:  4989829 us | Avg: 118805.5 us | WCET: 178982 us | Cycles:   42 | Period: 65-166 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=8574065 Process=2424507 Output=49468838
+========================
+
+[50770] [StateQueue] SEND OK | NORMAL
+[50770] [SensorQueue] SEND OK | T=28.6 C | LDR=360 | DIST=48.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[50970] [StateQueue] SEND OK | NORMAL
+[50970] [SensorQueue] SEND OK | T=28.6 C | LDR=350 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[51170] [StateQueue] SEND OK | NORMAL
+[51170] [SensorQueue] SEND OK | T=28.6 C | LDR=322 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[51370] [StateQueue] SEND OK | NORMAL
+[51370] [SensorQueue] SEND OK | T=28.5 C | LDR=306 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[51570] [StateQueue] SEND OK | NORMAL
+[51570] [SensorQueue] SEND OK | T=28.6 C | LDR=288 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[51770] [StateQueue] SEND OK | NORMAL
+[51770] [SensorQueue] SEND OK | T=28.6 C | LDR=269 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[51970] [StateQueue] SEND OK | NORMAL
+[51970] [SensorQueue] SEND OK | T=28.7 C | LDR=245 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[52170] [StateQueue] SEND OK | NORMAL
+[52170] [SensorQueue] SEND OK | T=28.5 C | LDR=197 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[52370] [StateQueue] SEND OK | NORMAL
+[52370] [SensorQueue] SEND OK | T=28.5 C | LDR=247 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[52570] [StateQueue] SEND OK | NORMAL
+[52570] [SensorQueue] SEND OK | T=28.3 C | LDR=610 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[52770] [StateQueue] SEND OK | NORMAL
+[52770] [SensorQueue] SEND OK | T=28.6 C | LDR=819 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[52970] [StateQueue] SEND OK | NORMAL
+[52970] [SensorQueue] SEND OK | T=29.2 C | LDR=1843 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[53170] [StateQueue] SEND OK | NORMAL
+[53170] [SensorQueue] SEND OK | T=29.1 C | LDR=1692 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[53370] [StateQueue] SEND OK | NORMAL
+[53370] [SensorQueue] SEND OK | T=29.1 C | LDR=1644 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[53570] [StateQueue] SEND OK | NORMAL
+[53570] [SensorQueue] SEND OK | T=29.1 C | LDR=1613 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[53770] [StateQueue] SEND OK | NORMAL
+[53770] [SensorQueue] SEND OK | T=28.7 C | LDR=1568 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[53970] [StateQueue] SEND OK | NORMAL
+[53970] [SensorQueue] SEND OK | T=29.0 C | LDR=1620 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[54170] [StateQueue] SEND OK | NORMAL
+[54170] [SensorQueue] SEND OK | T=29.1 C | LDR=1877 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[54370] [StateQueue] SEND OK | NORMAL
+[54370] [SensorQueue] SEND OK | T=29.3 C | LDR=2351 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[54570] [StateQueue] SEND OK | NORMAL
+[54570] [SensorQueue] SEND OK | T=29.7 C | LDR=2442 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[54770] [StateQueue] SEND OK | NORMAL
+[54770] [SensorQueue] SEND OK | T=29.6 C | LDR=2410 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[54970] [StateQueue] SEND OK | NORMAL
+[54970] [SensorQueue] SEND OK | T=29.3 C | LDR=2330 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[55170] [StateQueue] SEND OK | NORMAL
+[55170] [SensorQueue] SEND OK | T=29.5 C | LDR=2381 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[55370] [StateQueue] SEND OK | NORMAL
+[55370] [SensorQueue] SEND OK | T=29.5 C | LDR=2401 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[55570] [StateQueue] SEND OK | NORMAL
+[55570] [SensorQueue] SEND OK | T=29.1 C | LDR=2250 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5066 ms
+System CPU Utilization: 58.52% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@          |
+Stack HWM [Sensor]: 1084 words
+Stack HWM [Process]: 1244 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1228 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   6.52% | Window:   660757 us | Avg:  26430.3 us | WCET: 136431 us | Cycles:   25 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.36% | Window:   239000 us | Avg:   9560.0 us | WCET:  19638 us | Cycles:   25 | Period: 200-200 ms | Deadline: N/A
+Output   | CPU:  49.64% | Window:  5029835 us | Avg: 119758.0 us | WCET: 178982 us | Cycles:   42 | Period: 65-166 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=9270253 Process=2682509 Output=54498673
+========================
+
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[55970] [StateQueue] SEND OK | NORMAL
+[55970] [SensorQueue] SEND OK | T=29.3 C | LDR=2174 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[56170] [StateQueue] SEND OK | NORMAL
+[56170] [SensorQueue] SEND OK | T=29.3 C | LDR=2185 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[56370] [StateQueue] SEND OK | NORMAL
+[56370] [SensorQueue] SEND OK | T=29.4 C | LDR=2368 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[56570] [StateQueue] SEND OK | NORMAL
+[56570] [SensorQueue] SEND OK | T=29.4 C | LDR=2419 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[56770] [StateQueue] SEND OK | NORMAL
+[56770] [SensorQueue] SEND OK | T=29.3 C | LDR=2315 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[56970] [StateQueue] SEND OK | NORMAL
+[56970] [SensorQueue] SEND OK | T=29.2 C | LDR=1822 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[57170] [StateQueue] SEND OK | NORMAL
+[57170] [SensorQueue] SEND OK | T=28.6 C | LDR=604 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[57370] [StateQueue] SEND OK | NORMAL
+[57370] [SensorQueue] SEND OK | T=28.5 C | LDR=488 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[57570] [StateQueue] SEND OK | NORMAL
+[57570] [SensorQueue] SEND OK | T=28.5 C | LDR=455 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[57770] [StateQueue] SEND OK | NORMAL
+[57770] [SensorQueue] SEND OK | T=28.5 C | LDR=401 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[57970] [StateQueue] SEND OK | NORMAL
+[57970] [SensorQueue] SEND OK | T=28.4 C | LDR=335 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[58170] [StateQueue] SEND OK | NORMAL
+[58170] [SensorQueue] SEND OK | T=28.4 C | LDR=286 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[58370] [StateQueue] SEND OK | NORMAL
+[58370] [SensorQueue] SEND OK | T=28.4 C | LDR=262 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[58570] [StateQueue] SEND OK | NORMAL
+[58570] [SensorQueue] SEND OK | T=28.3 C | LDR=266 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[58770] [StateQueue] SEND OK | NORMAL
+[58770] [SensorQueue] SEND OK | T=28.4 C | LDR=281 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[58970] [StateQueue] SEND OK | NORMAL
+[58970] [SensorQueue] SEND OK | T=28.5 C | LDR=303 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[59170] [StateQueue] SEND OK | NORMAL
+[59170] [SensorQueue] SEND OK | T=28.3 C | LDR=323 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[59370] [StateQueue] SEND OK | NORMAL
+[59370] [SensorQueue] SEND OK | T=28.4 C | LDR=342 | DIST=47.2 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[59570] [StateQueue] SEND OK | NORMAL
+[59570] [SensorQueue] SEND OK | T=28.4 C | LDR=351 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[59770] [StateQueue] SEND OK | NORMAL
+[59770] [SensorQueue] SEND OK | T=28.3 C | LDR=361 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[59970] [StateQueue] SEND OK | NORMAL
+[59970] [SensorQueue] SEND OK | T=28.4 C | LDR=364 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[60170] [StateQueue] SEND OK | NORMAL
+[60170] [SensorQueue] SEND OK | T=28.4 C | LDR=365 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[60370] [StateQueue] SEND OK | NORMAL
+[60370] [SensorQueue] SEND OK | T=28.3 C | LDR=353 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[60570] [StateQueue] SEND OK | NORMAL
+[60570] [SensorQueue] SEND OK | T=28.4 C | LDR=342 | DIST=47.6 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[60770] [StateQueue] SEND OK | NORMAL
+[60770] [SensorQueue] SEND OK | T=28.4 C | LDR=320 | DIST=47.6 cm | BTN=RELEASED
+
+=== SYSTEM TELEMETRY ===
+Report Window: 5076 ms
+System CPU Utilization: 58.41% of 2 cores
+Heap Free: 262840 bytes | Used: 46232 bytes | Window Min/Max: 262840/263104 bytes
+Heap Graph: |@           |
+Stack HWM [Sensor]: 1084 words
+Stack HWM [Process]: 1244 words
+Stack HWM [Output]: 2364 words
+Stack HWM [Emergency]: 1228 words
+--- Per-Task Runtime Statistics ---
+Sensor   | CPU:   6.51% | Window:   660771 us | Avg:  26430.8 us | WCET: 136431 us | Cycles:   25 | Period: 200-200 ms | Deadline: tracked | Misses: 0
+Process  | CPU:   2.36% | Window:   239358 us | Avg:   9574.3 us | WCET:  19638 us | Cycles:   25 | Period: 191-200 ms | Deadline: N/A
+Output   | CPU:  51.03% | Window:  5180927 us | Avg: 120486.7 us | WCET: 178982 us | Cycles:   43 | Period: 65-168 ms | Deadline: N/A
+Lifetime Runtime Us: Sensor=9931024 Process=2921867 Output=59679600
+========================
+
+[60970] [StateQueue] SEND OK | NORMAL
+[60970] [SensorQueue] SEND OK | T=28.2 C | LDR=303 | DIST=48.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[61170] [StateQueue] SEND OK | NORMAL
+[61170] [SensorQueue] SEND OK | T=28.4 C | LDR=285 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[61370] [StateQueue] SEND OK | NORMAL
+[61370] [SensorQueue] SEND OK | T=28.3 C | LDR=268 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[61570] [StateQueue] SEND OK | NORMAL
+[61570] [SensorQueue] SEND OK | T=28.4 C | LDR=269 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[61770] [StateQueue] SEND OK | NORMAL
+[61770] [SensorQueue] SEND OK | T=28.3 C | LDR=276 | DIST=48.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[61970] [StateQueue] SEND OK | NORMAL
+[61970] [SensorQueue] SEND OK | T=28.3 C | LDR=289 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[62170] [StateQueue] SEND OK | NORMAL
+[62170] [SensorQueue] SEND OK | T=28.4 C | LDR=313 | DIST=48.0 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[62370] [StateQueue] SEND OK | NORMAL
+[62370] [SensorQueue] SEND OK | T=28.4 C | LDR=327 | DIST=48.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[62570] [StateQueue] SEND OK | NORMAL
+[62570] [SensorQueue] SEND OK | T=28.2 C | LDR=339 | DIST=48.4 cm | BTN=RELEASED
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
+[Output] LEDs G=ON R=OFF | Buzzer=OFF | LCD=NORMAL
