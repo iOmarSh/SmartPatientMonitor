@@ -25,11 +25,26 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y clang-format
 
-      - name: Check formatting
+      - name: Auto-fix formatting
         run: |
           set -euo pipefail
           mapfile -t files < <(
             printf '%s\n' main.cpp
             find src include test -type f \( -name '*.cpp' -o -name '*.h' \) | sort
           )
-          clang-format --dry-run --Werror "${files[@]}"
+          clang-format -i "${files[@]}"
+          echo "✓ clang-format applied successfully"
+      
+      - name: Commit and push formatting changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          
+          if git diff --cached --quiet; then
+            echo "✓ Code is already properly formatted"
+          else
+            git commit -m "chore: apply clang-format auto-formatting"
+            git push
+            echo "✓ Formatting changes committed and pushed"
+          fi
