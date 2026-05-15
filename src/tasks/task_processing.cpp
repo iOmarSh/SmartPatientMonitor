@@ -3,37 +3,23 @@
 #include "freertos/task.h"
 #include "tasks/task_processing.h"
 #include "sync/rtos_sync.h"
+#include "utils/state_logic.h"
+#include "utils/diagnostics.h"
 
 void TaskProcessing(void *pvParameters)
 {
-    const float WARNING_DISTANCE_CM = 30.0f;
-    const float DANGER_TEMPERATURE_C = 38.0f;
     SensorData sensorData;
     SystemState previousState = STATE_NORMAL;
 
     while (1)
     {
+        MEASURE_START(procQueueReceive)
         if (xQueueReceive(gSensorQueue, &sensorData, pdMS_TO_TICKS(500)) == pdPASS)
         {
-            SystemState newState;
+            MEASURE_END(procQueueReceive, 250000); // Expect < 250ms blocking if 200ms sampling
 
-            if (sensorData.emergencyPressed)
-            {
-                newState = STATE_EMERGENCY;
-            }
-            else if (sensorData.temperature >= DANGER_TEMPERATURE_C)
-            {
-                // Only enter DANGER when temperature meets threshold.
-                newState = STATE_DANGER;
-            }
-            else if (sensorData.distance > 0.0f && sensorData.distance <= WARNING_DISTANCE_CM)
-            {
-                newState = STATE_WARNING;
-            }
-            else
-            {
-                newState = STATE_NORMAL;
-            }
+            injectCpuLoad(10); // Optional stress test load
+            SystemState newState = determineSystemState(sensorData);
 
             if (newState != previousState && xSemaphoreTake(gSerialMutex, pdMS_TO_TICKS(10)) == pdTRUE)
             {
