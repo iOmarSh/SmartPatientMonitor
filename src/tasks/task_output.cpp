@@ -6,6 +6,7 @@
 #include "outputs/indicators.h"
 #include "outputs/lcd_display.h"
 #include "sync/rtos_sync.h"
+#include "utils/diagnostics.h"
 
 namespace
 {
@@ -24,7 +25,10 @@ void TaskOutput(void *pvParameters)
 
     while (1)
     {
-        if (xQueueReceive(gStateQueue, &currentState, pdMS_TO_TICKS(200)) == pdPASS)
+        telemetryRecordCycleStart(outputMetrics, millis());
+        uint32_t exec_start = micros();
+
+        if (xQueueReceive(gStateQueue, &currentState, pdMS_TO_TICKS(100)) == pdPASS)
         {
             if (currentState != previousState && xSemaphoreTake(gSerialMutex, pdMS_TO_TICKS(10)) == pdTRUE)
             {
@@ -149,6 +153,12 @@ void TaskOutput(void *pvParameters)
             xSemaphoreGive(gSerialMutex);
         }
 
-        vTaskDelay(pdMS_TO_TICKS(100));
+#if ENABLE_STRESS_TESTS
+        injectCpuLoad(10); // Inject 10ms of blocking CPU load
+#endif
+        uint32_t exec_end = micros();
+        uint32_t exec_time = exec_end - exec_start;
+    telemetryRecordRuntime(outputMetrics, exec_time);
+
     }
 }

@@ -7,13 +7,20 @@
 #include "sensors/hcsr04_sensor.h"
 #include "sensors/button_input.h"
 #include "sync/rtos_sync.h"
+#include "utils/diagnostics.h"
 
 void TaskSensor(void *pvParameters)
 {
     SensorData sensorData;
 
+    TickType_t xLastWakeTime = xTaskGetTickCount();
+    const TickType_t xFrequency = pdMS_TO_TICKS(200);
+
     while (1)
     {
+        telemetryRecordCycleStart(sensorMetrics, millis());
+        uint32_t exec_start = micros();
+
         sensorData.lightLevel = readLDR();
         sensorData.temperature = readLM35Temperature();
         sensorData.distance = readHCSR04Distance();
@@ -63,6 +70,13 @@ void TaskSensor(void *pvParameters)
         }
 
         // Sample sensors at 200ms intervals to match processing expectations
-        vTaskDelay(pdMS_TO_TICKS(200));
+#if ENABLE_STRESS_TESTS
+        injectCpuLoad(10); // Inject 10ms of blocking CPU load
+#endif
+        uint32_t exec_end = micros();
+        uint32_t exec_time = exec_end - exec_start;
+        telemetryRecordRuntime(sensorMetrics, exec_time);
+
+        vTaskDelayUntil(&xLastWakeTime, xFrequency);
     }
 }

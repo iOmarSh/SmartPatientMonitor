@@ -13,12 +13,14 @@ void TaskProcessing(void *pvParameters)
 
     while (1)
     {
-        MEASURE_START(procQueueReceive)
+        telemetryRecordCycleStart(processingMetrics, millis());
         if (xQueueReceive(gSensorQueue, &sensorData, pdMS_TO_TICKS(500)) == pdPASS)
         {
-            MEASURE_END(procQueueReceive, 250000); // Expect < 250ms blocking if 200ms sampling
+            uint32_t exec_start = micros();
 
+#if ENABLE_STRESS_TESTS
             injectCpuLoad(10); // Optional stress test load
+#endif
             SystemState newState = determineSystemState(sensorData);
 
             if (newState != previousState && xSemaphoreTake(gSerialMutex, pdMS_TO_TICKS(10)) == pdTRUE)
@@ -45,6 +47,10 @@ void TaskProcessing(void *pvParameters)
                     xSemaphoreGive(gSerialMutex);
                 }
             }
+
+            uint32_t exec_end = micros();
+            uint32_t exec_time = exec_end - exec_start;
+            telemetryRecordRuntime(processingMetrics, exec_time);
         }
         else
         {
