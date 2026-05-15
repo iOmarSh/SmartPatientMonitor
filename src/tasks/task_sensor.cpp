@@ -2,33 +2,50 @@
 #include "tasks/task_sensor.h"
 #include <Wire.h>
 #include "pins.h"
+#include "sensors/hcsr04_sensor.h"
+#include "sensors/lm35_sensor.h"
+#include "sensors/ldr_sensor.h"
+#include "sync/rtos_sync.h"
+#include "system_types.h"
 
 void TaskSensor(void *pvParameters)
 {
-    // Initialize I2C for MPU6050
+    // Initialize I2C
     Wire.begin(I2C_SDA, I2C_SCL);
 
     while (1)
     {
-        // Read LM35 temperature (analog value)
-        int lm35Value = analogRead(PIN_LM35);
-        float temperature = (lm35Value * 3.3 / 4095.0) * 100.0; // Convert to Celsius
+        SensorData data;
 
-        // Read LDR light intensity (analog value)
-        int ldrValue = analogRead(PIN_LDR);
+        // Read LM35 temperature
+        data.temperature = readLM35Temperature();
 
-        // Read MPU6050 data (placeholder for actual implementation)
-        Wire.beginTransmission(0x68); // MPU6050 I2C address
-        Wire.write(0x3B); // Starting register for accelerometer data
-        Wire.endTransmission(false);
-        Wire.requestFrom(0x68, 6, true); // Request accelerometer data
-        int16_t accelX = (Wire.read() << 8) | Wire.read();
-        int16_t accelY = (Wire.read() << 8) | Wire.read();
-        int16_t accelZ = (Wire.read() << 8) | Wire.read();
+        // Read LDR light intensity
+        data.lightLevel = readLDR();
+
+        // Read HCSR04 distance
+        data.distance = readHCSR04Distance();
+
+        // Read emergency button
+        data.emergencyPressed = (digitalRead(PIN_BUTTON) == LOW);
+
+        // Update global sensor data under mutex
+        if (xSemaphoreTake(gSensorDataMutex, portMAX_DELAY) == pdTRUE)
+        {
+            gLatestSensorData = data;
+            xSemaphoreGive(gSensorDataMutex);
+        }
+
+        // Send to queue
+        xQueueOverwrite(gSensorQueue, &data);
 
         // Print sensor data to Serial (for debugging)
-        Serial.printf("Temperature: %.2f C, LDR: %d, AccelX: %d, AccelY: %d, AccelZ: %d\n",
-                      temperature, ldrValue, accelX, accelY, accelZ);
+        if (xSemaphoreTake(gSerialMutex, pdMS_TO_TICKS(10)) == pdTRUE)
+        {
+            Serial.printf("Temp: %.2f C, LDR: %d, Dist: %.2f cm, Emg: %d\n",
+                          data.temperature, data.lightLevel, data.distance, data.emergencyPressed);
+            xSemaphoreGive(gSerialMutex);
+        }
 
         vTaskDelay(pdMS_TO_TICKS(1000));
     }

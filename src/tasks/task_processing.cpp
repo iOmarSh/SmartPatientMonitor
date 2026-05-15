@@ -1,17 +1,25 @@
 #include <Arduino.h>
 #include "tasks/task_processing.h"
 #include "pins.h"
+#include "sync/rtos_sync.h"
+#include "utils/state_logic.h"
 
 void TaskProcessing(void *pvParameters)
 {
+    SensorData data;
     while (1)
     {
-        // Placeholder for processing logic
-        // Example: Check thresholds for temperature and light intensity
+        if (xQueueReceive(gSensorQueue, &data, portMAX_DELAY) == pdTRUE)
+        {
+            SystemState newState = determineSystemState(data);
+            
+            xQueueOverwrite(gStateQueue, &newState);
 
-        // Simulate processing (e.g., threshold detection)
-        Serial.println("[Processing Task] Processing sensor data...");
-
-        vTaskDelay(pdMS_TO_TICKS(1500));
+            if (xSemaphoreTake(gSerialMutex, pdMS_TO_TICKS(10)) == pdTRUE)
+            {
+                Serial.printf("[Processing Task] State evaluated: %s\n", SystemStateToString(newState));
+                xSemaphoreGive(gSerialMutex);
+            }
+        }
     }
 }
