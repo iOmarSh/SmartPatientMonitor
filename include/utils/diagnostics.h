@@ -21,3 +21,6 @@ void injectCpuLoad(int ms_delay);
 #else
 #define injectCpuLoad(ms)
 #endif
+
+// Function to print high water mark for all critical tasks
+void logStackWatermarks();

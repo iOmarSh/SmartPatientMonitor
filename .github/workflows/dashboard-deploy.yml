@@ -1,0 +1,61 @@
+name: Dashboard Deployment
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'Dashboard/**'
+  workflow_dispatch:
+
+jobs:
+  deploy-dashboard:
+    runs-on: ubuntu-latest
+    name: Deploy React Dashboard to GitHub Pages
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: Dashboard/esp32-dashboard/package-lock.json
+      
+      - name: Install dependencies
+        working-directory: Dashboard/esp32-dashboard
+        run: npm install
+      
+      - name: Build React app
+        working-directory: Dashboard/esp32-dashboard
+        run: npm run build
+        env:
+          CI: false
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: Dashboard/esp32-dashboard/build
+          cname: monitor.example.com
+      
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dashboard-build-${{ github.run_number }}
+          path: Dashboard/esp32-dashboard/build/
+          retention-days: 7
+      
+      - name: Comment on commit
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ Dashboard deployed successfully! Build artifacts available.'
+            })
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
